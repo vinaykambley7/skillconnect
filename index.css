@@ -109,7 +109,7 @@ section {
 .feature-card {
     background: white;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
