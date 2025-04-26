@@ -85,12 +85,26 @@ section {
     padding: 4rem 0;
 }
 
+
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
-}
+    
+    max-width: 1200px;     
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 600px) {
+    .features {
+      
+      grid-template-columns: 1fr;
+     
+      padding: 0 1rem;
+    }
+  }
 
 .feature-card {
     background: white;
