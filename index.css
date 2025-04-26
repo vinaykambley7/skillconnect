@@ -108,7 +108,7 @@ section {
   
 
 .feature-card {
-    background: white;
+    background: var(--gray);
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -144,16 +144,6 @@ section {
 }
 
 
-.problem-section {
-    background: var(--gray);
-    margin: 8px;          
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    
-    
-  }
   
   @media (max-width: 300px) {
     .problem-section {
