@@ -125,7 +125,7 @@ h2 {
 .problem-section {
     background: var(--gray);
     margin: 8px;
-    padding: 2rem;
+    padding: 10px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
