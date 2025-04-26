@@ -127,6 +127,8 @@ h2 {
     margin: 8px;
     background-size: cover;
     padding: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 .stats {
