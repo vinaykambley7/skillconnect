@@ -114,22 +114,20 @@ section {
 }
 
 @media (max-width: 600px) {
-    h1 {
+    h1, h2, h3 {
         font-size: 2rem;
         text-align: center;
         color: var(--primary);
     }
-    h2 {
-        font-size: 1.5rem;
-        text-align: center;
-        color: var(--primary);
-    }
-    h3 {
-        font-size: 1.2rem;
-        text-align: center;
-        color: var(--primary);
+
+    .card { /* or whatever your white background container class is */
+        width: 90%;  /* not 100% so it gets margin from sides */
+        margin: 0 auto; /* center it horizontally */
+        padding: 1rem; /* some breathing space */
+        box-sizing: border-box; /* important so padding doesn't add to width */
     }
 }
+
 
 .problem-section {
     background: var(--gray);
