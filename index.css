@@ -123,6 +123,7 @@ h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     margin:8px;
+    padding:5px;
 }
 
 h2 {
@@ -131,6 +132,8 @@ h2 {
     margin-bottom: 2rem;
     color: var(--primary);
     margin:8px;
+    padding:5px;
+    
 }
 h3{
     font-size: 2.5rem;
@@ -138,6 +141,7 @@ h3{
     margin-bottom: 2rem;
     color: var(--primary);
     margin:8px;
+     padding:5px;
     } 
 .problem-section {
     background: var(--gray);
