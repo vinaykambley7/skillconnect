@@ -119,11 +119,7 @@ section {
     transform: translateY(-10px);
 }
 
-h1, h2, h3 {
-        font-size: 2rem;
-        text-align: center;
-        color: var(--primary);
-    }
+
 
     .card { /* or whatever your white background container class is */
         width: 90%;  /* not 100% so it gets margin from sides */
@@ -297,6 +293,21 @@ footer {
 
 .h2 {
     color: white;
+}
+h1{
+   font-size: 2rem;
+        text-align: center;
+        color: var(--primary); 
+}
+h2{
+    font-size: 2rem;
+        text-align: center;
+        color: var(--primary);
+}
+h3{
+    font-size: 2rem;
+        text-align: center;
+        color: var(--primary);
 }
 
 
