@@ -1,241 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
 :root {
-      --primary: #4a6bff;
-      --secondary: #ff7e5f;
-      --dark: #2d3748;
-      --light: #f7fafc;
-      --gray: #e2e8f0;
-    }
+    --primary: #4a6bff;
+    --secondary: #ff7e5f;
+    --dark: #2d3748;
+    --light: #f7fafc;
+    --gray: #e2e8f0;
+}
+.img {
+    height: 300px;
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%; 
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  
+  .logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color:white; 
+    margin-bottom: 8px;
+  }
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: var(--dark);
-      line-height: 1.6;
-    }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+    line-height: 1.6;
+}
 
-    .hero {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      padding: 5rem 2rem;
-      text-align: center;
-    }
+.hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    margin-bottom: 8px;
+}
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
 
-    .btn {
-      display: inline-block;
-      background: white;
-      color: var(--primary);
-      padding: 0.8rem 2rem;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 1rem 0.5rem;
-      transition: all 0.3s ease;
-    }
 
-    .btn-primary {
-      background: var(--primary);
-      color: white;
-    }
+.btn {
+    display: inline-block;
+    background: white;
+    color: var(--primary);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1rem 0.5rem;
+    transition: all 0.3s ease;
+}
 
-    .btn-secondary {
-      background: transparent;
-      color: white;
-      border: 2px solid white;
-    }
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
 
-    .btn:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
 
-    section {
-      padding: 4rem 0;
-    }
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
 
+section {
+    padding: 4rem 0;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    
+    max-width: 1200px;     
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @media (max-width: 200px) {
     .features {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
+      
+      grid-template-columns: 1fr;
+     
+      padding: 0 1rem;
     }
+  }
+  
 
-    .feature-card {
-      background: white;
-      border-radius: 10px;
-      padding: 2rem;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease;
-    }
+.feature-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
 
-    .feature-card:hover {
-      transform: translateY(-10px);
-    }
+.feature-card:hover {
+    transform: translateY(-10px);
+}
 
-    .problem-section {
-      background: var(--gray);
-      margin: 8px;
-      padding: 2rem;
-      border-radius: 10px;
-    }
-
-    .stats {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      margin: 3rem 0;
-    }
-
-    .stat-item {
-      text-align: center;
-      padding: 1rem;
-    }
-
-    .stat-number {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: var(--primary);
-      margin-bottom: 0.5rem;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 2rem;
-      margin-top: 3rem;
-    }
-
-    .service-card {
-      background: white;
-      border-radius: 10px;
-      padding: 2rem;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-      transition: transform 0.3s ease;
-      margin: 8px;
-    }
-
-    .service-card img {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 1rem;
-    }
-
-    .testimonials {
-      background: var(--gray);
-      margin: 8px;
-      padding: 2rem;
-      border-radius: 10px;
-    }
-
-    .cta {
-      background: linear-gradient(135deg, var(--primary), var(--secondary));
-      color: white;
-      text-align: center;
-      padding: 5rem 2rem;
-    }
-
-    footer {
-      background-color: var(--dark);
-      color: white;
-      padding: 60px 0 20px;
-    }
-
-    .footer-content {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      margin-bottom: 40px;
-    }
-
-    .footer-about .logo {
-      font-size: 1.8rem;
-      font-weight: 700;
-      margin-bottom: 20px;
-      display: block;
-    }
-
-    .footer-about p {
-      opacity: 0.8;
-      margin-bottom: 20px;
-    }
-
-    .footer-contact h3 {
-      font-size: 1.3rem;
-      margin-bottom: 20px;
-      color: white;
-    }
-
-    .footer-contact ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .footer-contact li {
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-    }
-
-    .footer-contact i {
-      margin-right: 10px;
-      color: var(--secondary);
-    }
-
-    .footer-bottom {
-      text-align: center;
-      padding-top: 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .footer-bottom p {
-      opacity: 0.7;
-      font-size: 0.9rem;
-    }
-
-    /* Logo and Header */
-    .logo-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px 0;
-    }
-
-    .logo-text {
-      font-size: 2rem;
-      font-weight: bold;
-      color: white;
-      margin-bottom: 8px;
-    }
-
-    .img {
-      height: 300px;
-      border-radius: 50px;
-      display: block;
-      margin: 0 auto;
-      max-width: 100%;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      h1, h2, h3 {
+@media (max-width: 600px) {
+    h1, h2, h3 {
         font-size: 2rem;
         text-align: center;
         color: var(--primary);
-      }
+    }
 
-      .features, .services {
-        grid-template-columns: 1fr;
-      }
+    .card { /* or whatever your white background container class is */
+        width: 90%;  /* not 100% so it gets margin from sides */
+        margin: 0 auto; /* center it horizontally */
+        padding: 1rem; /* some breathing space */
+        box-sizing: border-box; /* important so padding doesn't add to width */
+    }
+}
 
-      .container {
+@media (max-width: 600px) {
+    .container {
         padding: 0 1rem;
-      }
+    }
+    .problem-section, .service-card, .feature-card {
+        padding: 1rem;
+    }
+}
+
+
+.problem-section {
+    background: var(--gray);
+    margin: 8px;          
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+    
+  }
+  
+  @media (max-width: 300px) {
+    .problem-section {
+      width: 90%;          
+      max-width: 400px;     
+      margin: 8px auto;    
+    }
+  }
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    margin: 8px;
+}
+
+.service-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+}
+
+.testimonials {
+    background: var(--gray);
+    margin: 8px;
+
+}
+
+.cta {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 60px 0 20px;
+
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-about .logo {
+    color: white;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer-about .logo span {
+    color: var(--accent);
+}
+
+.footer-about p {
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+.footer-contact h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-contact ul {
+    list-style: none;
+}
+
+.footer-contact li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: var(--accent);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    opacity: 0.7;
+    font-size: 0.9rem;
+}
+
+.nav-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4361ee;
+    text-decoration: none;
+}
+
+.nav-logo span {
+    color: #f72585;
+}
+
+
+
+.h2 {
+    color: white;
+}
+
     
