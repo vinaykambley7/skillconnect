@@ -466,4 +466,44 @@ footer {
     .section-subtitle {
         font-size: 1rem;
     }
+.cta-button {
+    display: inline-block;
+    background-color: var(--accent);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #a5174d;
+    transform: translateY(-3px);
+}
+    .whatsapp-btn {
+    position: relative;
+    overflow: hidden;
+    background-color: #25D366;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E !important;
+}
+
+.whatsapp-btn:after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(30deg);
+    transition: all 0.3s;
+}
+
+.whatsapp-btn:hover:after {
+    left: 100%;
 }
